@@ -883,3 +883,6 @@ java.io.FileNotFoundException: C:\travail\CAN\CAN_projet\can_1\Debug\can_1.elf n
 	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
 	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-02-05 11:25:11.391
+!MESSAGE Indexed 'adegager' (41 sources, 103 headers) in 4.28 sec: 10,226 declarations; 72,048 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0024%)

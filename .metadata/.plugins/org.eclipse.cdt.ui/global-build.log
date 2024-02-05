@@ -1,4 +1,4 @@
-09:08:19 **** Incremental Build of configuration Debug for project can_1 ****
+11:15:31 **** Incremental Build of configuration Debug for project can_1 ****
 make -j8 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
 arm-none-eabi-gcc -o "can_1.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\travail\CAN\CAN_projet\can_1\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="can_1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
@@ -7,139 +7,15 @@ Finished building target: can_1.elf
 arm-none-eabi-size   can_1.elf 
 arm-none-eabi-objdump -h -S  can_1.elf  > "can_1.list"
    text	   data	    bss	    dec	    hex	filename
-   7076	     20	   1612	   8708	   2204	can_1.elf
+   7288	     20	   1620	   8928	   22e0	can_1.elf
 Finished building: default.size.stdout
  
 Finished building: can_1.list
  
-09:14:25 **** Incremental Build of configuration Debug for project can_1 ****
+11:18:43 **** Incremental Build of configuration Debug for project can_1 ****
 make -j8 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "can_1.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\travail\CAN\CAN_projet\can_1\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="can_1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: can_1.elf
- 
 arm-none-eabi-size   can_1.elf 
-arm-none-eabi-objdump -h -S  can_1.elf  > "can_1.list"
    text	   data	    bss	    dec	    hex	filename
-   7108	     20	   1620	   8748	   222c	can_1.elf
+   7288	     20	   1620	   8928	   22e0	can_1.elf
 Finished building: default.size.stdout
- 
-Finished building: can_1.list
- 
-09:16:28 **** Incremental Build of configuration Debug for project can_1 ****
-make -j8 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "can_1.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\travail\CAN\CAN_projet\can_1\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="can_1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: can_1.elf
- 
-arm-none-eabi-size   can_1.elf 
-arm-none-eabi-objdump -h -S  can_1.elf  > "can_1.list"
-   text	   data	    bss	    dec	    hex	filename
-   7108	     20	   1620	   8748	   222c	can_1.elf
-Finished building: default.size.stdout
- 
-Finished building: can_1.list
- 
-09:17:36 **** Incremental Build of configuration Debug for project can_1 ****
-make -j8 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "can_1.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\travail\CAN\CAN_projet\can_1\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="can_1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: can_1.elf
- 
-arm-none-eabi-size   can_1.elf 
-arm-none-eabi-objdump -h -S  can_1.elf  > "can_1.list"
-   text	   data	    bss	    dec	    hex	filename
-   7108	     20	   1620	   8748	   222c	can_1.elf
-Finished building: default.size.stdout
- 
-Finished building: can_1.list
- 
-09:18:23 **** Incremental Build of configuration Debug for project can_1 ****
-make -j8 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "can_1.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\travail\CAN\CAN_projet\can_1\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="can_1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: can_1.elf
- 
-arm-none-eabi-size   can_1.elf 
-arm-none-eabi-objdump -h -S  can_1.elf  > "can_1.list"
-   text	   data	    bss	    dec	    hex	filename
-   7108	     20	   1620	   8748	   222c	can_1.elf
-Finished building: default.size.stdout
- 
-Finished building: can_1.list
- 
-10:09:06 **** Incremental Build of configuration Debug for project can_1 ****
-make -j8 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c:22:10: fatal error: p18f2680.h: No such file or directory
-   22 | #include <p18f2680.h>
-      |          ^~~~~~~~~~~~
-compilation terminated.
-make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
-"make -j8 all" terminated with exit code 2. Build might be incomplete.
-10:09:43 **** Incremental Build of configuration Debug for project can_1 ****
-make -j8 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "can_1.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\travail\CAN\CAN_projet\can_1\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="can_1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: can_1.elf
- 
-arm-none-eabi-size   can_1.elf 
-arm-none-eabi-objdump -h -S  can_1.elf  > "can_1.list"
-   text	   data	    bss	    dec	    hex	filename
-   7260	     20	   1620	   8900	   22c4	can_1.elf
-Finished building: default.size.stdout
- 
-Finished building: can_1.list
- 
-10:10:42 **** Incremental Build of configuration Debug for project can_1 ****
-make -j8 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "can_1.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\travail\CAN\CAN_projet\can_1\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="can_1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: can_1.elf
- 
-arm-none-eabi-size   can_1.elf 
-arm-none-eabi-objdump -h -S  can_1.elf  > "can_1.list"
-   text	   data	    bss	    dec	    hex	filename
-   7268	     20	   1620	   8908	   22cc	can_1.elf
-Finished building: default.size.stdout
- 
-Finished building: can_1.list
- 
-10:13:45 **** Incremental Build of configuration Debug for project can_1 ****
-make -j8 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "can_1.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\travail\CAN\CAN_projet\can_1\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="can_1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: can_1.elf
- 
-arm-none-eabi-size   can_1.elf 
-arm-none-eabi-objdump -h -S  can_1.elf  > "can_1.list"
-   text	   data	    bss	    dec	    hex	filename
-   7272	     20	   1620	   8912	   22d0	can_1.elf
-Finished building: default.size.stdout
- 
-Finished building: can_1.list
- 
-10:19:10 **** Incremental Build of configuration Debug for project can_1 ****
-make -j8 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:113:23: error: 'BYTE' undeclared (first use in this function)
-  113 |          TxData[2] = (BYTE)(uivitesse_afficheur>>8);   // positionne les MSB
-      |                       ^~~~
-../Core/Src/main.c:113:23: note: each undeclared identifier is reported only once for each function it appears in
-make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
-"make -j8 all" terminated with exit code 2. Build might be incomplete.
-10:19:34 **** Incremental Build of configuration Debug for project can_1 ****
-make -j8 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "can_1.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\travail\CAN\CAN_projet\can_1\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="can_1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: can_1.elf
- 
-arm-none-eabi-size   can_1.elf 
-arm-none-eabi-objdump -h -S  can_1.elf  > "can_1.list"
-   text	   data	    bss	    dec	    hex	filename
-   7284	     20	   1620	   8924	   22dc	can_1.elf
-Finished building: default.size.stdout
- 
-Finished building: can_1.list
  
