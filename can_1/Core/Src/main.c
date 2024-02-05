@@ -56,6 +56,7 @@ static void MX_CAN1_Init(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
+CAN_HandleTypeDef hcan1;
 
 /* USER CODE END 0 */
 
@@ -66,6 +67,10 @@ static void MX_CAN1_Init(void);
 int main(void)
 {
   /* USER CODE BEGIN 1 */
+	HAL_Init();
+	SystemClock_Config();
+	MX_GPIO_Init();
+	MX_CAN1_Init();
 
   /* USER CODE END 1 */
 
@@ -90,12 +95,51 @@ int main(void)
   MX_CAN1_Init();
   /* USER CODE BEGIN 2 */
 
+  if (HAL_CAN_Start(&hcan1) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  CAN_TxHeaderTypeDef TxHeader;
+	static uint8_t TxData[8];
+
+	 // Configuration du message CAN
+	 TxHeader.StdId = 0xB6; // ID du message CAN
+	 TxHeader.RTR = CAN_RTR_DATA;
+	 TxHeader.IDE = CAN_ID_STD;
+	 TxHeader.DLC = 8; // Longueur des données
+
+	 // Données à envoyer (ex: commande pour éteindre le voyant)
+	 uint16_t uivitesse_afficheur = (unsigned short)(120*100);
+	 TxData[2] = (uint8_t)(uivitesse_afficheur>>8);   // positionne les MSB
+	 TxData[3] = (uint8_t)(uivitesse_afficheur);	  // positionne les LSB
+
+
+	 // Envoi du message CAN
+	 if (HAL_CAN_AddTxMessage(&hcan1, &TxHeader, TxData, (uint32_t *)CAN_TX_MAILBOX0) != HAL_OK)
+	 {
+	   Error_Handler();
+	 }
+
+	 // Attente de la fin de la transmission
+	 while (HAL_CAN_GetTxMailboxesFreeLevel(&hcan1) != 3)
+	 {
+	   // Attendre que tous les mailboxes soient libres
+	 }
+
+	 HAL_Delay(1000);
+
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
+	  if (HAL_CAN_AddTxMessage(&hcan1, &TxHeader, TxData, (uint32_t *)CAN_TX_MAILBOX0) != HAL_OK)
+	  {
+	 	   Error_Handler();
+	  }
+	  HAL_Delay(500);
+
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
@@ -164,7 +208,7 @@ static void MX_CAN1_Init(void)
   hcan1.Init.Mode = CAN_MODE_NORMAL;
   hcan1.Init.SyncJumpWidth = CAN_SJW_1TQ;
   hcan1.Init.TimeSeg1 = CAN_BS1_1TQ;
-  hcan1.Init.TimeSeg2 = CAN_BS2_1TQ;
+  hcan1.Init.TimeSeg2 = CAN_BS2_6TQ;
   hcan1.Init.TimeTriggeredMode = DISABLE;
   hcan1.Init.AutoBusOff = DISABLE;
   hcan1.Init.AutoWakeUp = DISABLE;
