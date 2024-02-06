@@ -886,3 +886,520 @@ java.io.FileNotFoundException: C:\travail\CAN\CAN_projet\can_1\Debug\can_1.elf n
 
 !ENTRY org.eclipse.cdt.core 1 0 2024-02-05 11:25:11.391
 !MESSAGE Indexed 'adegager' (41 sources, 103 headers) in 4.28 sec: 10,226 declarations; 72,048 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0024%)
+!SESSION 2024-02-06 13:18:10.013 -----------------------------------------------
+eclipse.buildId=Version 1.13.2
+java.version=17.0.6
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.core.net 1 0 2024-02-06 13:18:29.524
+!MESSAGE System property http.proxyHost is not set but should be cache.u-psud.fr.
+
+!ENTRY org.eclipse.core.net 1 0 2024-02-06 13:18:29.525
+!MESSAGE System property http.proxyPort is not set but should be 8080.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-02-06 13:18:33.410
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-02-06 13:18:33.421
+!MESSAGE Log4j2 initialized with config file C:\travail\CAN\CAN_projet\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-02-06 13:18:40.541
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.core.net 1 0 2024-02-06 13:19:13.089
+!MESSAGE System property https.proxyHost is set to cache.u-psud.fr but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2024-02-06 13:19:13.089
+!MESSAGE System property https.proxyPort is set to 8080 but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2024-02-06 13:19:13.090
+!MESSAGE System property https.proxyHost is set to cache.u-psud.fr but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2024-02-06 13:19:13.090
+!MESSAGE System property https.proxyPort is set to 8080 but should not be set.
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2024-02-06 13:19:55.154
+!MESSAGE Connection to https://sw-center.st.com/stm32cubeide/openstlinux/updatesite1/p2.index failed on Connect to https://sw-center.st.com:443 [sw-center.st.com/88.221.134.67, sw-center.st.com/88.221.134.18] failed: Connection timed out: no further information. Retry attempt 0 started
+!STACK 0
+org.apache.hc.client5.http.HttpHostConnectException: Connect to https://sw-center.st.com:443 [sw-center.st.com/88.221.134.67, sw-center.st.com/88.221.134.18] failed: Connection timed out: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:549)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory$1.run(SSLConnectionSocketFactory.java:219)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
+	at org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:216)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:148)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:396)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:158)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:168)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:136)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:175)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:96)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:133)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:115)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:75)
+	at org.eclipse.ecf.provider.filetransfer.httpclient5.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1009)
+	at org.eclipse.ecf.provider.filetransfer.httpclient5.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1001)
+	at org.eclipse.ecf.provider.filetransfer.httpclient5.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:997)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:76)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.net 1 0 2024-02-06 13:19:55.357
+!MESSAGE System property https.proxyHost is set to cache.u-psud.fr but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2024-02-06 13:19:55.357
+!MESSAGE System property https.proxyPort is set to 8080 but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2024-02-06 13:19:55.358
+!MESSAGE System property https.proxyHost is set to cache.u-psud.fr but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2024-02-06 13:19:55.358
+!MESSAGE System property https.proxyPort is set to 8080 but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2024-02-06 13:20:37.399
+!MESSAGE System property https.proxyHost is set to cache.u-psud.fr but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2024-02-06 13:20:37.400
+!MESSAGE System property https.proxyPort is set to 8080 but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2024-02-06 13:20:37.400
+!MESSAGE System property https.proxyHost is set to cache.u-psud.fr but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2024-02-06 13:20:37.401
+!MESSAGE System property https.proxyPort is set to 8080 but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2024-02-06 13:21:19.391
+!MESSAGE System property https.proxyHost is set to cache.u-psud.fr but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2024-02-06 13:21:19.392
+!MESSAGE System property https.proxyPort is set to 8080 but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2024-02-06 13:21:19.392
+!MESSAGE System property https.proxyHost is set to cache.u-psud.fr but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2024-02-06 13:21:19.393
+!MESSAGE System property https.proxyPort is set to 8080 but should not be set.
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1002 2024-02-06 13:22:01.358
+!MESSAGE Unable to connect to repository https://sw-center.st.com/stm32cubeide/openstlinux/updatesite1/compositeContent.xml
+!STACK 0
+org.apache.hc.client5.http.HttpHostConnectException: Connect to https://sw-center.st.com:443 [sw-center.st.com/88.221.134.18, sw-center.st.com/88.221.134.67] failed: Connection timed out: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:549)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory$1.run(SSLConnectionSocketFactory.java:219)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
+	at org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:216)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:148)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:396)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:158)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:168)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:136)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:175)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:96)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:133)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:115)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:75)
+	at org.eclipse.ecf.provider.filetransfer.httpclient5.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:251)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:71)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.net 1 0 2024-02-06 13:22:01.359
+!MESSAGE System property https.proxyHost is set to cache.u-psud.fr but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2024-02-06 13:22:01.359
+!MESSAGE System property https.proxyPort is set to 8080 but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2024-02-06 13:22:01.360
+!MESSAGE System property https.proxyHost is set to cache.u-psud.fr but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2024-02-06 13:22:01.360
+!MESSAGE System property https.proxyPort is set to 8080 but should not be set.
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2024-02-06 13:22:43.328
+!MESSAGE Connection to https://sw-center.st.com/stm32cubeide/updatesite1/p2.index failed on Connect to https://sw-center.st.com:443 [sw-center.st.com/88.221.134.18, sw-center.st.com/88.221.134.67] failed: Connection timed out: no further information. Retry attempt 0 started
+!STACK 0
+org.apache.hc.client5.http.HttpHostConnectException: Connect to https://sw-center.st.com:443 [sw-center.st.com/88.221.134.18, sw-center.st.com/88.221.134.67] failed: Connection timed out: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:549)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory$1.run(SSLConnectionSocketFactory.java:219)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
+	at org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:216)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:148)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:396)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:158)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:168)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:136)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:175)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:96)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:133)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:115)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:75)
+	at org.eclipse.ecf.provider.filetransfer.httpclient5.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1009)
+	at org.eclipse.ecf.provider.filetransfer.httpclient5.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1001)
+	at org.eclipse.ecf.provider.filetransfer.httpclient5.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:997)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:76)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.net 1 0 2024-02-06 13:22:43.531
+!MESSAGE System property https.proxyHost is set to cache.u-psud.fr but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2024-02-06 13:22:43.532
+!MESSAGE System property https.proxyPort is set to 8080 but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2024-02-06 13:22:43.532
+!MESSAGE System property https.proxyHost is set to cache.u-psud.fr but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2024-02-06 13:22:43.532
+!MESSAGE System property https.proxyPort is set to 8080 but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2024-02-06 13:23:25.502
+!MESSAGE System property https.proxyHost is set to cache.u-psud.fr but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2024-02-06 13:23:25.502
+!MESSAGE System property https.proxyPort is set to 8080 but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2024-02-06 13:23:25.502
+!MESSAGE System property https.proxyHost is set to cache.u-psud.fr but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2024-02-06 13:23:25.503
+!MESSAGE System property https.proxyPort is set to 8080 but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2024-02-06 13:24:07.473
+!MESSAGE System property https.proxyHost is set to cache.u-psud.fr but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2024-02-06 13:24:07.474
+!MESSAGE System property https.proxyPort is set to 8080 but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2024-02-06 13:24:07.474
+!MESSAGE System property https.proxyHost is set to cache.u-psud.fr but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2024-02-06 13:24:07.475
+!MESSAGE System property https.proxyPort is set to 8080 but should not be set.
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1002 2024-02-06 13:24:49.441
+!MESSAGE Unable to connect to repository https://sw-center.st.com/stm32cubeide/updatesite1/compositeContent.xml
+!STACK 0
+org.apache.hc.client5.http.HttpHostConnectException: Connect to https://sw-center.st.com:443 [sw-center.st.com/88.221.134.67, sw-center.st.com/88.221.134.18] failed: Connection timed out: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:549)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory$1.run(SSLConnectionSocketFactory.java:219)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
+	at org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:216)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:148)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:396)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:158)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:168)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:136)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:175)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:96)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:133)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:115)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:75)
+	at org.eclipse.ecf.provider.filetransfer.httpclient5.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:251)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:71)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.net 1 0 2024-02-06 13:24:49.442
+!MESSAGE System property https.proxyHost is set to cache.u-psud.fr but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2024-02-06 13:24:49.442
+!MESSAGE System property https.proxyPort is set to 8080 but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2024-02-06 13:24:49.443
+!MESSAGE System property https.proxyHost is set to cache.u-psud.fr but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2024-02-06 13:24:49.443
+!MESSAGE System property https.proxyPort is set to 8080 but should not be set.
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2024-02-06 13:25:10.417
+!MESSAGE Connection to https://download.eclipse.org/releases/2023-03/p2.index failed on Connect to https://download.eclipse.org:443 [download.eclipse.org/198.41.30.199] failed: Connection timed out: no further information. Retry attempt 0 started
+!STACK 0
+org.apache.hc.client5.http.HttpHostConnectException: Connect to https://download.eclipse.org:443 [download.eclipse.org/198.41.30.199] failed: Connection timed out: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:549)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory$1.run(SSLConnectionSocketFactory.java:219)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
+	at org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:216)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:148)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:396)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:158)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:168)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:136)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:175)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:96)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:133)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:115)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:75)
+	at org.eclipse.ecf.provider.filetransfer.httpclient5.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1009)
+	at org.eclipse.ecf.provider.filetransfer.httpclient5.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1001)
+	at org.eclipse.ecf.provider.filetransfer.httpclient5.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:997)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:76)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.net 1 0 2024-02-06 13:25:10.618
+!MESSAGE System property https.proxyHost is set to cache.u-psud.fr but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2024-02-06 13:25:10.622
+!MESSAGE System property https.proxyPort is set to 8080 but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2024-02-06 13:25:10.622
+!MESSAGE System property https.proxyHost is set to cache.u-psud.fr but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2024-02-06 13:25:10.623
+!MESSAGE System property https.proxyPort is set to 8080 but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2024-02-06 13:25:31.613
+!MESSAGE System property https.proxyHost is set to cache.u-psud.fr but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2024-02-06 13:25:31.614
+!MESSAGE System property https.proxyPort is set to 8080 but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2024-02-06 13:25:31.614
+!MESSAGE System property https.proxyHost is set to cache.u-psud.fr but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2024-02-06 13:25:31.615
+!MESSAGE System property https.proxyPort is set to 8080 but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2024-02-06 13:25:52.607
+!MESSAGE System property https.proxyHost is set to cache.u-psud.fr but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2024-02-06 13:25:52.608
+!MESSAGE System property https.proxyPort is set to 8080 but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2024-02-06 13:25:52.608
+!MESSAGE System property https.proxyHost is set to cache.u-psud.fr but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2024-02-06 13:25:52.609
+!MESSAGE System property https.proxyPort is set to 8080 but should not be set.
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1002 2024-02-06 13:26:13.615
+!MESSAGE Unable to connect to repository https://download.eclipse.org/releases/2023-03/compositeContent.xml
+!STACK 0
+org.apache.hc.client5.http.HttpHostConnectException: Connect to https://download.eclipse.org:443 [download.eclipse.org/198.41.30.199] failed: Connection timed out: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:549)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory$1.run(SSLConnectionSocketFactory.java:219)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
+	at org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:216)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:148)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:396)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:158)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:168)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:136)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:175)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:96)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:133)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:115)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:75)
+	at org.eclipse.ecf.provider.filetransfer.httpclient5.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:251)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:71)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.net 1 0 2024-02-06 13:26:13.616
+!MESSAGE System property https.proxyHost is set to cache.u-psud.fr but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2024-02-06 13:26:13.617
+!MESSAGE System property https.proxyPort is set to 8080 but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2024-02-06 13:26:13.617
+!MESSAGE System property https.proxyHost is set to cache.u-psud.fr but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2024-02-06 13:26:13.618
+!MESSAGE System property https.proxyPort is set to 8080 but should not be set.
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2024-02-06 13:26:34.628
+!MESSAGE Connection to https://download.eclipse.org/tools/cdt/releases/latest/p2.index failed on Connect to https://download.eclipse.org:443 [download.eclipse.org/198.41.30.199] failed: Connection timed out: no further information. Retry attempt 0 started
+!STACK 0
+org.apache.hc.client5.http.HttpHostConnectException: Connect to https://download.eclipse.org:443 [download.eclipse.org/198.41.30.199] failed: Connection timed out: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:549)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory$1.run(SSLConnectionSocketFactory.java:219)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
+	at org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:216)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:148)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:396)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:158)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:168)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:136)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:175)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:96)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:133)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:115)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:75)
+	at org.eclipse.ecf.provider.filetransfer.httpclient5.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1009)
+	at org.eclipse.ecf.provider.filetransfer.httpclient5.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1001)
+	at org.eclipse.ecf.provider.filetransfer.httpclient5.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:997)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:76)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.net 1 0 2024-02-06 13:26:34.829
+!MESSAGE System property https.proxyHost is set to cache.u-psud.fr but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2024-02-06 13:26:34.830
+!MESSAGE System property https.proxyPort is set to 8080 but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2024-02-06 13:26:34.830
+!MESSAGE System property https.proxyHost is set to cache.u-psud.fr but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2024-02-06 13:26:34.830
+!MESSAGE System property https.proxyPort is set to 8080 but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2024-02-06 13:26:55.834
+!MESSAGE System property https.proxyHost is set to cache.u-psud.fr but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2024-02-06 13:26:55.834
+!MESSAGE System property https.proxyPort is set to 8080 but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2024-02-06 13:26:55.835
+!MESSAGE System property https.proxyHost is set to cache.u-psud.fr but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2024-02-06 13:26:55.835
+!MESSAGE System property https.proxyPort is set to 8080 but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2024-02-06 13:27:16.845
+!MESSAGE System property https.proxyHost is set to cache.u-psud.fr but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2024-02-06 13:27:16.846
+!MESSAGE System property https.proxyPort is set to 8080 but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2024-02-06 13:27:16.846
+!MESSAGE System property https.proxyHost is set to cache.u-psud.fr but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2024-02-06 13:27:16.846
+!MESSAGE System property https.proxyPort is set to 8080 but should not be set.
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1002 2024-02-06 13:27:37.850
+!MESSAGE Unable to connect to repository https://download.eclipse.org/tools/cdt/releases/latest/compositeContent.xml
+!STACK 0
+org.apache.hc.client5.http.HttpHostConnectException: Connect to https://download.eclipse.org:443 [download.eclipse.org/198.41.30.199] failed: Connection timed out: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:549)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory$1.run(SSLConnectionSocketFactory.java:219)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
+	at org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:216)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:148)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:396)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:158)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:168)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:136)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:175)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:96)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:133)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:115)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:75)
+	at org.eclipse.ecf.provider.filetransfer.httpclient5.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:251)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:71)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
